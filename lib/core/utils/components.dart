@@ -16,8 +16,7 @@ class Widgets {
           style: styles.style25,
         ),
       );
-
-  static Widget Button({void Function()? onTap, required String title}) =>
+  static Widget Button({void Function()? onTap, required String title,bool isLoading =false}) =>
       GestureDetector(
         onTap: onTap,
         child: Container(
@@ -28,14 +27,13 @@ class Widgets {
             borderRadius: BorderRadius.circular(15),
           ),
           child: Center(
-            child: Text(
+            child:isLoading?CircularProgressIndicator():Text(
               '$title',
               style: styles.style25,
             ),
           ),
         ),
       );
-
   static Widget orderInfo1({required String title, required String value}) =>
       Column(
         children: [
@@ -61,7 +59,6 @@ class Widgets {
           )
         ],
       );
-
   static Widget orderInfo2() => Column(
         children: [
           SizedBox(
@@ -86,7 +83,6 @@ class Widgets {
           )
         ],
       );
-
   static Widget Divider() => Padding(
         padding: const EdgeInsetsDirectional.only(start: 20, end: 20, top: 20),
         child: Container(
@@ -95,7 +91,6 @@ class Widgets {
           color: Colors.blueGrey,
         ),
       );
-
   static Widget paymentLogo(
           {required imageUrl,
           void Function()? onTap,
@@ -116,7 +111,6 @@ class Widgets {
           ),
         ),
       );
-
   static Widget CustomCriedtCard({
     required String cardNumber,
     required String expiryDate,

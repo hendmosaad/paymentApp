@@ -1,0 +1,4 @@
+class Conestances {
+  static String secretKey='sk_test_51OnZS8IZo83u90Ckxdbo1SNOsrO4LVA6zcfPsNhOpCiyD7uY4aenMvrdwlb3CB78NIWbsXYD1irynFUr6cJsaYIp00jj6cD2fy';
+  static String publishableKey='pk_test_51OnZS8IZo83u90CkO3oXERcwGcSQc8irDWWHjAsEIMaT3Aj4l5BvSUQI34JAPLWO68ToSXiqUhPlEqdiiZx1q4VG00VQcIjBYt';
+}
