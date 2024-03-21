@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:payment/core/utils/Conestances.dart';
+import 'package:payment/persentation/controller/PaymentObserver.dart';
 import 'package:payment/persentation/views/checkout_app.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Bloc.observer = MyBlocObserver();
+  Stripe.publishableKey = Conestances.publishableKey;
+
   runApp(const MyApp());
 }
 

@@ -30,9 +30,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_credit_card: ^4.0.1
-  flutter_stripe: ^10.0.0
-
+  flutter_credit_card:
+  flutter_stripe:
+  bloc: ^8.1.3
+  flutter_bloc: ^8.1.4
+  dio: ^5.4.1
+  dartz: ^0.10.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
