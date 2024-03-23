@@ -26,7 +26,7 @@ class PaymentIntentModel {
   Null? onBehalfOf;
   Null? paymentMethod;
   PaymentMethodOptions? paymentMethodOptions;
-  List<String>? paymentMethodTypes;
+  List<dynamic>? paymentMethodTypes;
   Null? processing;
   Null? receiptEmail;
   Null? review;
@@ -76,7 +76,7 @@ class PaymentIntentModel {
     paymentMethodOptions =
     json['payment_method_options'] != null ? new PaymentMethodOptions.fromJson(
         json['payment_method_options']) : null;
-    paymentMethodTypes = json['payment_method_types'].cast<String>();
+    paymentMethodTypes = json['payment_method_types'] as List<dynamic>;
     processing = json['processing'];
     receiptEmail = json['receipt_email'];
     review = json['review'];
